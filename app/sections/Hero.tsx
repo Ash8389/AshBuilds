@@ -22,37 +22,6 @@ export default function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Content */}
           <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-8 flex flex-wrap gap-4"
-            >
-              <Button
-                size="lg"
-                className="bg-slate-900 px-8 text-white hover:bg-slate-800"
-              >
-                Start Your Project
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-
-              {/* NEW: Book a Call button */}
-              <a
-                href="https://calendly.com/jhaashish270/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-slate-300"
-                >
-                  <Calendar className="mr-2 h-4 w-4" />
-                  Book a Free Call
-                </Button>
-              </a>
-            </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -94,6 +63,20 @@ export default function Hero() {
                 <Play className="mr-2 h-4 w-4" />
                 View Demo
               </Button>
+              <a
+                href="https://calendly.com/jhaashish270/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-slate-300"
+                >
+                  <Calendar className="mr-2 h-4 w-4" />
+                  Book a Free Call
+                </Button>
+              </a>
             </motion.div>
           </div>
 
