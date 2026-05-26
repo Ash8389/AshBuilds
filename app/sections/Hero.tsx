@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Play, Zap, Shield, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ArrowRight, Play, Zap, Shield, Clock, Calendar } from "lucide-react"
 
 const stats = [
   { icon: Zap, label: "Projects Delivered", value: "120+" },
@@ -25,11 +25,32 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700"
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="mt-8 flex flex-wrap gap-4"
             >
-              <span className="h-2 w-2 animate-pulse rounded-full bg-blue-500" />
-              Available for new projects
+              <Button
+                size="lg"
+                className="bg-slate-900 px-8 text-white hover:bg-slate-800"
+              >
+                Start Your Project
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+
+              {/* NEW: Book a Call button */}
+              <a
+                href="https://calendly.com/jhaashish270/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-slate-300"
+                >
+                  <Calendar className="mr-2 h-4 w-4" />
+                  Book a Free Call
+                </Button>
+              </a>
             </motion.div>
 
             <motion.h1

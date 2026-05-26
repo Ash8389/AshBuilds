@@ -61,9 +61,24 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Button size="sm" className="bg-slate-900 hover:bg-slate-800">
-              Get Started
-            </Button>
+
+            {/* Book Call */}
+            <a
+              href="https://calendly.com/jhaashish270/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="sm" variant="outline" className="border-slate-300">
+                Book Call
+              </Button>
+            </a>
+
+            {/* Get Started - FIXED: added link to contact */}
+            <a href="#contact">
+              <Button size="sm" className="bg-slate-900 hover:bg-slate-800">
+                Get Started
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -86,6 +101,15 @@ export default function Navbar() {
             className="border-b border-slate-200 bg-white lg:hidden"
           >
             <div className="space-y-3 px-4 py-4">
+              <a
+                href="https://calendly.com/jhaashish270/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 font-medium text-blue-600"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Book a Free Call
+              </a>
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -96,7 +120,10 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <Button className="w-full bg-slate-900">Get Started</Button>
+              {/* Get Started - FIXED: added link to contact */}
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button className="w-full bg-slate-900">Get Started</Button>
+              </a>
             </div>
           </motion.div>
         )}

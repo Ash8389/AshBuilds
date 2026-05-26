@@ -224,7 +224,7 @@ export default function Contact() {
             © 2026 AshBuilds. Built with React, Next.js & Tailwind CSS.
           </p>
           <a
-            href="#"
+            href="#top"
             className="flex items-center gap-1 text-sm text-slate-400 transition-colors hover:text-white"
           >
             Back to top
