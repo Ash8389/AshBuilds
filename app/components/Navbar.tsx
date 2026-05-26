@@ -74,8 +74,8 @@ export default function Navbar() {
             </a>
 
             {/* Get Started - FIXED: added link to contact */}
-            <a href="#contact">
-              <Button size="sm" className="bg-slate-900 hover:bg-slate-800">
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button className="w-full bg-slate-900 text-white">
                 Get Started
               </Button>
             </a>
