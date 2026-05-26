@@ -221,7 +221,7 @@ export default function Contact() {
             <span className="text-lg font-bold">AshBuilds</span>
           </div>
           <p className="text-sm text-slate-500">
-            © 2026 AgencyPro. Built with React, Next.js & Tailwind CSS.
+            © 2026 AshBuilds. Built with React, Next.js & Tailwind CSS.
           </p>
           <a
             href="#"
